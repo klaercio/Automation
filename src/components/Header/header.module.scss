@@ -1,12 +1,19 @@
 .cabecalho {
-    background-color: blue;
+    background-color: #DBF4A7;
     height: 75px;
     display: flex;
-    flex-grow: 1;
     align-items: center;
     justify-content: space-between;
 
     div {
-        padding: 20px;
+        font-weight: 600;
+        flex-grow: 1;
+        text-align: center;
     }
+
+    div:nth-child(2) {
+        text-align: left;
+        width: 60vw;
+    }
+    
 }

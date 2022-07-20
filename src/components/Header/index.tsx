@@ -1,16 +1,17 @@
 import style from './header.module.scss';
+import IEmpresa from '../../interfaces/IEmpresa';
 
-export default function Header() {
+export default function Header(empresa: IEmpresa) {
     return (
         <div className={style.cabecalho}>
             <div>
-                Logo
+                <img src='empresa.logo'></img>
             </div>
             <div>
-                Nome Empresa
+                <h3>{empresa.nome}</h3>
             </div>
             <div>
-                Razão social Empresa
+                <h3>{empresa.razao}</h3>
             </div>
         </div>
 
